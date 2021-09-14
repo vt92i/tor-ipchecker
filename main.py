@@ -17,7 +17,7 @@ def get_current_ip():
         get_current_ip()
 
 
-def main():
+if __name__ == "__main__":
     num = 0
     while True:
         try:
@@ -27,7 +27,3 @@ def main():
             print(f'|{num}|', f'|{get_current_ip()}|', f'|{current_time}|')
         except KeyboardInterrupt:
             sys.exit()
-
-
-if __name__ == "__main__":
-    main()
